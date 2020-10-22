@@ -1,0 +1,38 @@
+@font-face {
+    font-family: '3dumbregular';
+    src: url('3Dumb-webfont.eot');
+      src: url('3Dumb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: '2dumbregular';
+	src: url('2Dumb-webfont.eot');
+	src: url('2Dumb-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+h1 {
+	font-family: '3dumbregular';
+}
+
+h2 {
+	font-family: '2dumbregular'; 
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+h4 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	font-family: 'Sansita Swashed', cursive;
+}
