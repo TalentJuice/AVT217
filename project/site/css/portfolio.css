@@ -1,0 +1,439 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS RESET STOPS HERE*/
+
+
+/*BODY START*/
+html, body { 
+	overflow-x: hidden;
+	height: 100%;
+}
+
+#container{
+/*	max-width: 4000;*/
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	align-items: center;
+}
+/*BODY END*/
+
+/*BIG BOY COLUMN LAYOUT START*/
+.root{
+	display: grid;
+	grid-template-columns: 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px 65px;
+	grid-column-gap: 30px;
+}
+#home.root{
+	grid-template-rows: auto auto;
+	grid-row-gap: 20px;
+}
+
+#portfolio.root{
+	grid-template-rows: auto auto auto;
+	grid-row-gap: 30px;
+}
+
+#about.root{
+}
+
+#contact.root{
+}
+
+#contact-form.root{
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+}
+/*BIG BOY COLUMN LAYOUT END*/
+
+/*TEXT MANIPULATION START*/
+h1 {
+	font-family: roc-grotesk,sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size:  5.3125em;
+	transform:rotate(270deg);
+/*    transform-origin: 0 0;*/
+}
+
+h2{
+	font-family: roc-grotesk, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 2em;
+	color: white;
+}
+p {
+	font-family: roc-grotesk,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	color: white;
+}
+
+#recentproject{
+	color:black;
+}
+
+#myportfolio{
+	color: #3b6d91;
+}
+
+#knowme{
+	color: white;
+}
+
+#contactme{
+	color: white;
+}
+/*TEXT MANIPULATION END*/
+
+/*NAV BAR MANIPULATION START*/
+nav{
+  	font-size: 1.125rem;
+}
+
+ul{
+	display: flex;
+	justify-content: center;
+}
+li{
+	font-family: roc-grotesk, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	color: white;
+	display: inline;
+}
+
+.nav{
+	padding: 29.5px 22px;
+	display: flex;
+	text-decoration: none;
+	color: white;
+}
+.nav:hover {
+	background-color: lightgray;
+	color: #3b6d91;
+}
+
+.nav:active {
+	background-color: white;
+	color: #3b6d91;
+}
+header {
+/*	position: sticky;
+	top: 0;*/
+	display: flex;
+	background-color: black;
+	flex-direction: row;
+	justify-content: flex-end;
+	max-height: 75px;
+	margin: 0 -9999rem;
+  /* add back section padding value */
+  	padding: 0 9999rem;
+	max-width: 920px;
+}
+
+#logo {
+	height: 55px;
+	margin: auto 0;
+}
+/*NAV BAR MANIPULATION END*/
+
+
+/*SECTION MANIPULATION START*/
+
+#home.root {
+	margin: 0 -9999rem;
+  /* add back section padding value */
+  	padding: 39px 9999rem;
+	background-color: #203e51;
+	
+}
+
+#paragraph1.text {
+	grid-column: 2 / span 5;
+	grid-row: 2;
+}
+
+#paragraph2.text {
+	grid-column: 7 / span 5;
+	grid-row: 2;
+}
+
+#hero.imgs {
+	grid-column: 3/ span 9;
+	grid-row: 1;
+	width: 825px;
+}
+
+#recentproject.header {
+	grid-column: 2/ 3;
+	grid-row: 1;
+	height: 100%;
+}
+/*HOME PAGE END*/
+
+/*PORTFOLIO PAGE START*/
+
+#portfolio.root{
+	margin: 0 -9999rem;
+  /* add back section padding value */
+  	padding: 39px 9999rem;
+	background-color: #142431;
+}
+
+#main.imgs {
+	grid-column: 2/ span 5;
+	grid-row: 1/3;
+}
+
+.placeholder1 {
+	grid-column: 7/ span 3;
+	grid-row: 1;
+	background-color: red;
+	height: 255px;
+}
+
+.placeholder2 {
+	grid-column: 10/ span 3;
+	grid-row: 1;
+	background-color: red;
+		height: 255px;
+}
+.placeholder3 {
+	grid-column: 7/ span 3;
+	grid-row: 2;
+	background-color: red;
+		height: 255px;
+}
+
+.placeholder4 {
+	grid-column: 10/ span 3;
+	grid-row: 2;
+	background-color: red;
+		height: 255px;
+}
+
+.placeholder5 {
+	grid-column: 1/ span 3;
+	grid-row: 3;
+	background-color: red;
+		height: 255px;
+}
+
+.placeholder6 {
+	grid-column: 4/ span 3;
+	grid-row: 3;
+	background-color: red;
+		height: 255px;
+}
+
+.placeholder7 {
+	grid-column: 7/ span 3;
+	grid-row: 3;
+	background-color: red;
+		height: 255px;
+}
+
+.placeholder8 {
+	grid-column: 10/ span 3;
+	grid-row: 3;
+	background-color: red;
+		height: 255px;
+}
+
+#myportfolio{
+	grid-column: 1/ span 1;
+	grid-row: 1/ span 2;
+	height: 100%;
+}
+/*PORTFOLIO PAGE END*/
+
+/*ABOUT PAGE START*/
+#about.root{
+	margin: 0 -4000rem;
+/*   add back section padding value*/ 
+  	padding: 39px 1000rem;
+	background: linear-gradient(90deg, #142431 50%, #3b6d91 50%);
+}
+
+#bio.text{
+	grid-column: 8/ span 5;
+	padding: 0px 0 0px 0px;
+}
+
+#bio.text p{
+	line-height: 1.21875em;
+	margin-bottom: 1.21875em;
+}
+
+#bio.text h2{
+	margin-bottom: 1.21875rem;
+}
+
+#portrait {
+	width: 534px; /*factoring in border*/
+	height: 657px;
+	object-fit: cover;
+	grid-column: 1/ span 6;
+	border: 3px solid #3B6D91;
+	outline: 2px solid #3B6D91;
+	outline-offset: -8px;
+}
+
+#gettoknowme.header {
+	grid-column: 7/ span 1;
+	grid-row: 1/ span 2;
+	height: 100%;
+}
+/*ABOUT PAGE END*/
+
+/*CONTACT PAGE START*/
+#contact.root{
+	margin: 0 -9999rem;
+  /* add back section padding value */
+  	padding: 39px 9999rem;
+	background: #142431;
+}
+
+#contactme{
+	grid-column: 5/ span 4;
+	grid-row: 1;
+	font-size: .828125em;
+}
+
+#contacthead{
+	height: 100%;
+	grid-column: 4/ span 1;
+	grid-row: 1;
+}
+
+#contact-form.root{
+	background: #142431;
+}
+/*CONTACT PAGE END*/
+
+/*SECTION MANIPULATION END*/
+
+/*FORM CSS START*/
+label {
+	font-family: roc-grotesk,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	color: white;
+}
+.form-control {
+	font-family: roc-grotesk,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	color: black;
+	padding: 4px;
+	border-radius: .25em;
+	border: 0;
+	background: black;
+}
+#message.form-control, #email.form-control{
+	margin-bottom: 1em;
+}
+lable{
+/*	margin-bottom: 1em;*/
+}
+#submit{
+	width: 350px;
+	height: 2.25em;
+	background: #3b6d91;
+	color: white;
+	font-family: roc-grotesk,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+	border-radius: .25em;
+	border: 0;
+	grid-column: 5/ span 4;
+	grid-row: 9;
+}
+
+#firstname.form-control, #lastname.form-control{
+	width: 152px;/* This factors in padding*/
+}
+
+#email.form-control, #message{
+	width: 342px;/* This factors in padding*/
+}
+
+#form1{
+	grid-column: 5/ span 2;
+	grid-row: 3;
+}
+
+#form2{
+	grid-column: 7/ span 2;
+	grid-row: 3;
+}
+
+#form3{
+	grid-column: 5/ span 4;
+	grid-row: 4;	
+}
+
+#form4{
+	grid-column: 5/ span 4;
+	grid-row: 8;
+}
+/*FORM CSS END*/
+
